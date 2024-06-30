@@ -1,154 +1,262 @@
-// 1-masalasi
+// 1-masala
 
+// let arr = [2, 4, 5, 11, 16, 20]
+// let newArr = []
 
-// function getLastChar(str) {
+// arr.forEach(function(value){
 
-//     if (str.length === 0) {
-//         return null;
+//     newArr.push(value * value)
+// })
+// console.log(newArr);
+
+// 2-masala
+
+// let arr = [-1, -4, 20, 13, -6, 4, -11]
+// let musbatArr = []
+
+// arr.forEach((value) =>{
+//     if(value > 0){
+//         musbatArr.push(value)
 //     }
-  
-//     else {
-//         return str.charAt(str.length - 1);
-//     }
-// }
+// })
+// console.log(musbatArr);
 
+// 3-masala
 
-// const testString = "Hello";
-// console.log("Test natijasi:", getLastChar(testString)); 
+// let arr = [2, 4, 5, 11, 16, 20]
 
+// arr.forEach((value) =>{
+//     console.log(value * 2);
+// })
 
+// 4-masala
 
-// 2-masalasi
+// let arr = [2, 4, 5, 11, 16, 20];
+// let sum = 0;
 
+// arr.forEach((value) => {
+//   sum += value;
+// });
 
-// function getMiddleChar(str) {
-//     // String uzunligi
-//     const length = str.length;
-  
-//     if (length % 2 !== 0) {
-//         const middleIndex = Math.floor(length / 2);
-//         return str.charAt(middleIndex);
-//     }
+// console.log(sum);
 
-//     else {
-//         const middleIndex = length / 2 - 1;
-//         return str.slice(middleIndex, middleIndex + 2);
-//     }
-// }
+// 5-masala
 
+// let arr = [-1, -4, 20, 13, -6, 4, -11];
 
-// const testString1 = "Hello";
-// const testString2 = "Testing";
-// console.log("Test natijasi (testString1):", getMiddleChar(testString1)); 
-// console.log("Test natijasi (testString2):", getMiddleChar(testString2)); 
+// let musbat2 = arr.filter((value) => value > 0);
+// console.log(musbat2);
 
+// 6-masala
 
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-// 4-masalasi
+// let juft = arr.filter((value) => value % 2 == 0);
+// console.log(juft);
 
+//7-masala
 
-// function getStringLengthDescription(str) {
- 
-//     const length = str.length;
+// let str1 = ["BMW", "MERCEDEZ", "AUDI", "LI 9", "MATIZ", "NEXIA", "TICO"]
 
-//     if (length > 10) {
-//         return "Uzoq string";
-//     }
-    
-//     else {
-//         return "Qisqa string";
-//     }
-// }
+// let str2 = str1.filter(value => value.length < 5)
+// console.log(str2);
 
+// 8-masala
 
-// const testString1 = "Hello World";
-// const testString2 = "JavaScript";
-// console.log("Test natijasi (testString1):", getStringLengthDescription(testString1)); 
-// console.log("Test natijasi (testString2):", getStringLengthDescription(testString2)); 
+// let yosh = [19, 7, 12, 17, 24, 40, 34, 20, 15];
 
+// let yosh2 = yosh.filter((value) => value > 18);
+// console.log(yosh2);
 
-// Stringlarda `slice`, `substring`, va `substr` metodlariga oid  masala funksiyalar bilan ishlaydigan qilib tuzilgan shartlari:
+// 9-masala
 
+// let arr = [2, 4, 5, 11, 16, 20];
 
-// masala
+// let arr2 = arr.map((value) => value * value);
+// console.log(arr2);
 
+//10-masala
 
-// function getLastFiveChars(str) {
-   
-//     const length = str.length;
-  
-//     if (length >= 5) {
-//         return str.slice(-5); 
-//     } else {
-//         return str; 
-//     }
-// }
+// let arr = [2, 4, 5, 11, 16, 20];
 
+// let arr2 = arr.map((value) => value + 5);
+// console.log(arr2);
 
-// const testString1 = "Hello World";
-// const testString2 = "JavaScript";
-// console.log("Test natijasi (testString1):", getLastFiveChars(testString1)); 
-// console.log("Test natijasi (testString2):", getLastFiveChars(testString2)); 
+// 11-masala
 
+// let str = ["bmw", "mercedez", "audi", "li 9", "matiz", "nexia", "tiko"];
 
+// let str2 = str.map((words) => words.toUpperCase());
+// console.log(str2);
 
+// 12-masala
 
-// masala
+// let arr = [2, 4, 5, 11, 16, 20];
 
+// let arr2 = arr.map(value => Math.sqrt(value))
+// console.log(arr2);
 
-// function getSubstringFromSecondIndex(str) {
+// 13-masala
 
-//     return str.substring(2);
-// }
+// let arr = [1, 2, 3, -4, 5];
 
+// let manfiySon = arr.some(value => value < 0)
+// console.log(manfiySon);
 
-// const testString = "Hello World";
-// console.log("Test natijasi:", getSubstringFromSecondIndex(testString)); 
+// 14-masala
 
+// let str = ["bmw", "mercedezbenz", "audi", "li 9", "matiz", "nexia", "tiko", "lamborghini", ];
+// let str2 = str.some(value => value.length > 10)
 
+// console.log(str2);
 
-// masala
+// 15-masala
 
+// let arr = [1, 2, 3, -4, 5];
 
-// function convertToUpperCase(str) {
-    
-//     return str.toUpperCase();
-// }
+// let arr2 = arr.every((value) => value > 0);
+// console.log(arr2);
 
+// 16-masala
 
-// const testString = "Hello World";
-// console.log("Test natijasi:", convertToUpperCase(testString)); 
+// let str1 = ["BMW", "MERCEDEZ", "AUDI", "LI 9", "MATIZ", "NEXIA", "tico"];
 
+// let str2 = str1.every((value) => value == value.toUpperCase());
 
-// masala
+// console.log(str2);
 
+// 17-masala
 
-// function concatStrings(str1, str2) {
+// let str1 = ["BMW", "MERCEDEZ", "AUDI", "LI 9", "MATIZ", "NEXIA", "tico"];
 
-//     return str1.concat(str2);
-// }
+// let find = str1.includes("BMW")
+//  console.log(find);
 
-// const string1 = "Hello";
-// const string2 = "World";
-// console.log("Test natijasi:", concatStrings(string1, string2));
+// 18-masala
 
+// let str1 = [
+//   "BMW",
+//   "NEXIA",
+//   "MERCEDEZ",
+//   "AUDI",
+//   "LI 9",
+//   "MATIZ",
+//   "NEXIA",
+//   "tico",
+// ];
 
-// masala
+// let find = str1.indexOf("NEXIA");
+// console.log(find);
 
+// 19-masala
 
-// function padStringStart(str, maxLength, padChar) {
-  
-//     const padLength = maxLength - str.length;
-    
-//     if (padLength <= 0) {
-//         return str; 
-//     }
-  
-//     return padChar.repeat(padLength) + str;
-// }
+// let str1 = [
+//     "BMW",
+//     "NEXIA",
+//     "MERCEDEZ",
+//     "AUDI",
+//     "LI 9",
+//     "MATIZ",
+//     "NEXIA",
+//     "tico",
+//   ];
 
+//   let find = str1.lastIndexOf("NEXIA");
+//   console.log(find);
 
-// const testString = "World";
-// console.log("Test natijasi:", padStringStart(testString, 10, "-")); 
+// 20-masala
 
+// let arr = [2, 4, 5, 11, 16, 20];
+// let find = arr.find(value => value > 9 && value < 100)
 
+// console.log(find);
+
+// 21-masala
+
+// let arr = [2, 4, 5, 11, 16, 20];
+// let find = arr.findIndex(value => value > 9 && value < 100)
+// console.log(find);
+
+//22-masala
+
+// let arr = [2, 4, 5, 11, 16, 20];
+// let find = arr.findLast(value => value > 9 && value < 100)
+
+// console.log(find);
+
+// 23-masala
+
+// let arr = [2, 4, 5, 11, 16, 20];
+// let find = arr.findLastIndex(value => value > 9 && value < 100)
+// console.log(find);
+
+// 24-masala
+
+// let str1 = [
+//   "BMW",
+//   "NEXIA",
+//   "MERCEDEZ",
+//   "AUDI",
+//   "LI 9",
+//   "MATIZ",
+//   "NEXIA",
+//   "tico",
+// ];
+
+// let reStr = str1.reverse()
+// console.log(reStr);
+
+// 25-masala
+
+// let arr = [21, 14, 50, 17, 16, 3];
+
+// let arr2 = arr.sort((a, b) =>{
+//     return a - b
+// })
+
+// console.log(arr2);
+
+// 26-masala
+
+// let arr = [2, 4, 5, 11, 16, 20];
+
+// arr.forEach(function(value){
+//     console.log(value * 2);
+// })
+
+// 27-masala
+
+// let arr = [2, 4, -5, 11, -16, 20];
+
+// let arr2 = arr.filter((value) => value < 0);
+// console.log(arr2);
+
+// 28-masala
+
+// let arr = [2, 4, 5, 11, 16, 20];
+
+// let arr2 = arr.map((value) =>  value * value)
+// console.log(arr2);
+
+// 29-masala
+
+// let arr = [1, 2, 3, -4, 5];
+
+// let manfiySon = arr.some(value => value < 0)
+// console.log(manfiySon);
+
+// 30-masala
+
+// let arr = [1, 2, 3, 4, 5];
+
+// let musbatSon = arr.every((value) => value > 0);
+// console.log(musbatSon);
+
+// 31-masala
+
+// let arr = [1, 2, 3, 4, 5, 6];
+
+// let arr2 = arr.map(value => value * 3)
+
+// let arr3 = arr2.filter((value) => value > 10 )
+// console.log(arr3);
